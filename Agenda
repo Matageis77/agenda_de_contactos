@@ -44,9 +44,11 @@ def eliminar_contacto():
     nombre = input('Ingrese el nombre que desea eliminar: \r\n')
     try:
         os.remove(CARPETA + nombre + EXTENSION)
-        print('\r\n Eliminado correctamente')
-    except expression as identifier:
-        print('No existe ese contacto')
+        print('\r\n Eliminado correctamente \r\n')
+    except:
+        print('\r\n No existe ese contacto \r\n') 
+        
+    app()
         
 def buscar_contacto():
     nombre = input('Seleccione el contacto que desea buscar: \r\n')
